@@ -2,8 +2,26 @@
 <html>
 <head>
     <title></title>
+    <script src="../lib/jquery.min.1.5.1.js"></script>
+    <script src="../src/jquery.charcount.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#in").charCount({
+                minCount:6
+            });
+        });
+    </script>
+    <style>
+        .exceeded{
+            border: 1px solid red;
+        }
+        .correct{
+            border: 1px solid green;
+        }
+    </style>
 </head>
 <body>
+    <input type="text" id="in" />
 
 </body>
 </html>
